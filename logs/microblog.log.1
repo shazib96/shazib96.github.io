@@ -1,0 +1,126 @@
+2020-11-04 14:38:05,664 ERROR: Exception on /api/users/1 [GET] [in /home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shazib/microblog/app/api/users.py", line 7, in get_user
+    return jsonify(User.query.get_or_404(id).to_dict())
+  File "/home/shazib/microblog/app/models.py", line 107, in to_dict
+    'self':url_for('api.get_user', id=self.id),
+NameError: name 'url_for' is not defined
+2020-11-04 14:38:08,700 ERROR: Exception on /api/users/1 [GET] [in /home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shazib/microblog/app/api/users.py", line 7, in get_user
+    return jsonify(User.query.get_or_404(id).to_dict())
+  File "/home/shazib/microblog/app/models.py", line 107, in to_dict
+    'self':url_for('api.get_user', id=self.id),
+NameError: name 'url_for' is not defined
+2020-11-06 00:33:18,991 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 00:35:26,645 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 00:36:17,959 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 00:41:55,600 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 00:56:52,685 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 01:07:08,660 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 01:08:37,240 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 01:17:20,543 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 01:21:34,130 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 01:25:25,938 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 01:26:19,210 ERROR: Exception on /api/users/1 [GET] [in /home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shazib/microblog/app/api/users.py", line 7, in get_user
+    return jsonify(User.query.get_or_404(id).to_dict())
+  File "/home/shazib/microblog/app/models.py", line 107, in to_dict
+    'self':url_for('api.get_user', id=self.id),
+NameError: name 'url_for' is not defined
+2020-11-06 01:28:19,955 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 01:28:58,307 ERROR: Exception on /api/users/1 [GET] [in /home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shazib/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/shazib/microblog/app/api/users.py", line 7, in get_user
+    return jsonify(User.query.get_or_404(id).to_dict())
+  File "/home/shazib/microblog/app/models.py", line 107, in to_dict
+    'self':url_for('api.get_user', id=self.id),
+NameError: name 'url_for' is not defined
+2020-11-06 01:32:30,601 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 01:40:09,730 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 21:52:29,360 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 21:54:43,762 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-06 21:55:49,552 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-07 20:16:32,758 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-07 21:21:05,728 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-07 21:22:03,891 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-07 21:55:43,697 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-07 21:56:12,511 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-09 22:05:52,252 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-10 18:38:01,604 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-10 18:38:28,316 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-10 18:38:50,294 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-10 18:46:20,105 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 00:49:05,127 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 00:49:38,500 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 00:52:27,976 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 00:54:14,039 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 00:55:32,775 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 00:56:21,449 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 01:01:52,105 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 01:02:27,115 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 17:07:39,530 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 18:14:26,022 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:56]
+2020-11-11 19:04:29,045 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:21:10,783 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:21:31,786 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:23:32,423 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:25:11,947 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:25:15,992 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:25:45,697 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:25:59,210 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:26:56,365 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:28:00,997 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:30:15,105 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 19:46:38,083 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 20:40:06,832 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
+2020-11-11 20:40:38,710 INFO: Microblog startup [in /home/shazib/microblog/app/__init__.py:55]
